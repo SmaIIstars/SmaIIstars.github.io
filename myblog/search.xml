@@ -242,17 +242,17 @@
     <title>Markdown</title>
     <url>/myblog/posts/6fc8eab5/</url>
     <content><![CDATA[<h1 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h1><p><strong>Markdown is a lightweight markup language that can be used to add formatting elements to plain text documents. I recommend <a href="https://typora.io/">Typora</a> as the editor</strong></p>
-<h2 id="Basic-Syntax"><a href="#Basic-Syntax" class="headerlink" title="Basic Syntax"></a>Basic Syntax</h2><h3 id="Title"><a href="#Title" class="headerlink" title="Title"></a>Title</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">A space is required after the &#x27;#&#x27; sign</span><br><span class="line"><span class="section"># Level1</span></span><br><span class="line">...</span><br><span class="line"><span class="section">###### Level6</span></span><br></pre></td></tr></table></figure>
-<h3 id="Emphasizes"><a href="#Emphasizes" class="headerlink" title="Emphasizes"></a>Emphasizes</h3><p><strong>For compatibility, it’s recommended to use ‘*’ sign instead of ‘_’</strong></p>
+<h2 id="Basic-Syntax"><a href="#Basic-Syntax" class="headerlink" title="Basic Syntax"></a>Basic Syntax</h2><h3 id="Title"><a href="#Title" class="headerlink" title="Title"></a>Title</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">A space is required after the &#x27;#&#x27; sign</span><br><span class="line"></span><br><span class="line"><span class="section"># Level1</span></span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="section">###### Level6</span></span><br></pre></td></tr></table></figure>
+<h3 id="Emphasizes"><a href="#Emphasizes" class="headerlink" title="Emphasizes"></a>Emphasizes</h3><p><strong>For compatibility, it’s recommended to use ‘*‘ sign instead of ‘_‘</strong></p>
 <ul>
 <li><p><em>Italic</em></p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">This is <span class="emphasis">*italic*</span> text</span><br><span class="line">This is <span class="emphasis">_italic_</span> text</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">This is <span class="emphasis">_italic_</span> text</span><br><span class="line">This is <span class="emphasis">_italic_</span> text</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>Bold</strong></p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">This is <span class="strong">**bold**</span> text</span><br><span class="line">This is <span class="strong">__bold__</span> text</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">This is <span class="strong">**bold**</span> text</span><br><span class="line">This is <span class="strong">**bold**</span> text</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong><em>Italic &amp; Bold</em></strong></p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">This is <span class="strong">**<span class="emphasis">*italic and bold<span class="strong">**<span class="emphasis">* text</span></span></span></span></span><br><span class="line"><span class="emphasis"><span class="strong"><span class="emphasis"><span class="strong">This is <span class="strong">__<span class="emphasis">_italic and bold<span class="strong">__<span class="emphasis">_ text</span></span></span></span></span></span></span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">This is <span class="strong">**<span class="emphasis">_italic and bold_</span>**</span> text</span><br><span class="line">This is <span class="strong">**<span class="emphasis">_italic and bold_</span>**</span> text</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="Quoting"><a href="#Quoting" class="headerlink" title="Quoting"></a>Quoting</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="quote">&gt; This is a content1</span></span><br><span class="line"><span class="quote">&gt;</span></span><br><span class="line"><span class="quote">&gt; This is a content2</span></span><br></pre></td></tr></table></figure>
@@ -271,13 +271,13 @@
 </blockquote>
 </blockquote>
 <h3 id="List"><a href="#List" class="headerlink" title="List"></a>List</h3><h4 id="Ordered-List"><a href="#Ordered-List" class="headerlink" title="Ordered List"></a>Ordered List</h4><p><strong>We can decide the starting index by ourselves, and it will be self-increasing in the future. No matter how the numbers are sorted, they will converted to an ordered list starting from the starting index</strong></p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">2.</span> Second</span><br><span class="line"><span class="bullet">4.</span> Third</span><br><span class="line"><span class="bullet">5.</span> Four</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">2.</span> Second</span><br><span class="line"><span class="bullet">3.</span> Third</span><br><span class="line"><span class="bullet">4.</span> Four</span><br></pre></td></tr></table></figure>
 <ol>
 <li>Second</li>
 <li>Third</li>
 <li>Four</li>
 </ol>
-<h4 id="Unordered-List"><a href="#Unordered-List" class="headerlink" title="Unordered List"></a>Unordered List</h4><p><strong>Don’t mix the sign(‘-‘, ‘*’, ‘+’) in the same list, pick one and stick width it</strong></p>
+<h4 id="Unordered-List"><a href="#Unordered-List" class="headerlink" title="Unordered List"></a>Unordered List</h4><p><strong>Don’t mix the sign(‘-‘, ‘*‘, ‘+’) in the same list, pick one and stick width it</strong></p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> First</span><br><span class="line"><span class="bullet">-</span> - Second</span><br><span class="line"><span class="bullet">  -</span> Second</span><br><span class="line"><span class="bullet">-</span> - - Third</span><br><span class="line"><span class="bullet">  -</span> - Third</span><br><span class="line"><span class="bullet">    -</span> Third</span><br></pre></td></tr></table></figure>
 <ul>
 <li>First</li>
@@ -303,15 +303,15 @@
 <p><code>This a &#39;code&#39; paragraph</code></p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```markdown</span></span><br><span class="line"><span class="code">This is a `markdown` code block</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">This is a <span class="code">`markdown`</span> code block</span><br></pre></td></tr></table></figure>
-<h3 id="Divider"><a href="#Divider" class="headerlink" title="Divider"></a>Divider</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br><span class="line"><span class="emphasis"><span class="strong"></span></span></span><br><span class="line"><span class="emphasis"><span class="strong">---</span></span></span><br><span class="line"><span class="emphasis"><span class="strong"></span></span></span><br><span class="line"><span class="emphasis"><span class="strong">+++</span></span></span><br><span class="line"><span class="emphasis"><span class="strong"></span></span></span><br><span class="line"><span class="emphasis"><span class="strong"><span class="strong">____</span><span class="strong">____</span><span class="strong">____</span><span class="strong">____</span>_</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="Divider"><a href="#Divider" class="headerlink" title="Divider"></a>Divider</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">---</span></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">+++</span><br><span class="line"></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 <h3 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">This is [<span class="string">Markdown</span>](<span class="link">https://markdown.com.cn</span>) link</span><br></pre></td></tr></table></figure>
 <p>This is <a href="https://markdown.com.cn">Markdown</a> link</p>
 <h4 id="Link-Title"><a href="#Link-Title" class="headerlink" title="Link Title"></a>Link Title</h4><p><strong>Hovering the cursor will show the link title</strong></p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">This is [<span class="string">Markdown</span>](<span class="link">https://markdown.com.cn &quot;Official Website&quot;</span>) link</span><br></pre></td></tr></table></figure>
 <p>This is <a href="https://markdown.com.cn." title="Official Website">Markdown</a> link</p>
 <h4 id="URL-amp-Email"><a href="#URL-amp-Email" class="headerlink" title="URL &amp; Email"></a>URL &amp; Email</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml">&lt;https://markdown.com.cn&gt;</span></span><br><span class="line"><span class="xml">&lt;fake@example.com&gt;</span></span><br></pre></td></tr></table></figure>
-<p><a href="https://markdown.com.cn">https://markdown.com.cn</a><br><a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#x66;&#x61;&#107;&#101;&#64;&#101;&#120;&#x61;&#109;&#112;&#x6c;&#x65;&#46;&#99;&#111;&#x6d;">&#x66;&#x61;&#107;&#101;&#64;&#101;&#120;&#x61;&#109;&#112;&#x6c;&#x65;&#46;&#99;&#111;&#x6d;</a></p>
-<h3 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&lt;!-- show a image --&gt;</span><br><span class="line">![<span class="string">avatar</span>](<span class="link">https://cdn.jsdelivr.net/gh/SmaIIstars/imgCDN/myBlog/img1.jpg</span>)</span><br><span class="line">&lt;!-- show a link image --&gt;</span><br><span class="line">[<span class="string">![avatar</span>](<span class="link">https://cdn.jsdelivr.net/gh/SmaIIstars/imgCDN/myBlog/img1.jpg</span>)](<span class="link">https://cdn.jsdelivr.net/gh/SmaIIstars/imgCDN/myBlog/img1.jpg</span>)</span><br></pre></td></tr></table></figure>
+<p><a href="https://markdown.com.cn">https://markdown.com.cn</a><br><a href="&#x6d;&#97;&#x69;&#108;&#116;&#x6f;&#x3a;&#102;&#x61;&#107;&#101;&#x40;&#x65;&#x78;&#x61;&#109;&#112;&#x6c;&#101;&#46;&#x63;&#x6f;&#109;">&#102;&#x61;&#107;&#101;&#x40;&#x65;&#x78;&#x61;&#109;&#112;&#x6c;&#101;&#46;&#x63;&#x6f;&#109;</a></p>
+<h3 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&lt;!-- show a image --&gt;</span><br><span class="line"></span><br><span class="line">![<span class="string">avatar</span>](<span class="link">https://cdn.jsdelivr.net/gh/SmaIIstars/imgCDN/myBlog/img1.jpg</span>)</span><br><span class="line"></span><br><span class="line">&lt;!-- show a link image --&gt;</span><br><span class="line"></span><br><span class="line">[<span class="string">![avatar</span>](<span class="link">https://cdn.jsdelivr.net/gh/SmaIIstars/imgCDN/myBlog/img1.jpg</span>)](<span class="link">https://cdn.jsdelivr.net/gh/SmaIIstars/imgCDN/myBlog/img1.jpg</span>)</span><br></pre></td></tr></table></figure>
 <h3 id="Embedded-HTML"><a href="#Embedded-HTML" class="headerlink" title="Embedded HTML"></a>Embedded HTML</h3><p><strong>markdown supports html embedding</strong></p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">This <span class="strong">**word**</span> is bold. This <span class="xml"><span class="tag">&lt;<span class="name">em</span>&gt;</span></span>word<span class="xml"><span class="tag">&lt;/<span class="name">em</span>&gt;</span></span> is italic.</span><br></pre></td></tr></table></figure>
 <p>This <strong>word</strong> is bold. This <em>word</em> is italic.</p>
@@ -323,7 +323,7 @@
           <td>Bar</td>
     </tr>
 </table><br>This is another regular paragraph.</p>
-<h2 id="Advanced-Syntax"><a href="#Advanced-Syntax" class="headerlink" title="Advanced Syntax"></a>Advanced Syntax</h2><h3 id="Table"><a href="#Table" class="headerlink" title="Table"></a>Table</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">| ID   |     Name     |  Age |</span><br><span class="line">| :--- | :----------: | ---: |</span><br><span class="line">| 1    | <span class="code">`SmallStars`</span> |   20 |</span><br></pre></td></tr></table></figure>
+<h2 id="Advanced-Syntax"><a href="#Advanced-Syntax" class="headerlink" title="Advanced Syntax"></a>Advanced Syntax</h2><h3 id="Table"><a href="#Table" class="headerlink" title="Table"></a>Table</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">| ID  |     Name     | Age |</span><br><span class="line">| :-- | :----------: | --: |</span><br><span class="line">| 1   | <span class="code">`SmallStars`</span> |  20 |</span><br></pre></td></tr></table></figure>
 <div class="table-container">
 <table>
 <thead>
@@ -351,12 +351,12 @@
 <sup>bignote</sup>. Here’s one with multiple paragraphs and code.<a href="#reffn_bignote" title="Jump back to footnote [bignote] in the text."> &#8617;</a>
 </blockquote>
 <h3 id="Title-Id"><a href="#Title-Id" class="headerlink" title="Title Id"></a>Title Id</h3><p><strong>Hexo not support this syntax</strong></p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># Markdown &#123;#markdown&#125;</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">id</span>=<span class="string">&quot;markdown&quot;</span>&gt;</span></span>Markdown<span class="xml"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line">[<span class="string">Markdown</span>](<span class="link">#markdown</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># Markdown &#123;#markdown&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">id</span>=<span class="string">&quot;markdown&quot;</span>&gt;</span></span>Markdown<span class="xml"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line">[<span class="string">Markdown</span>](<span class="link">#markdown</span>)</span><br></pre></td></tr></table></figure>
 <h3 id="Delete-Divider"><a href="#Delete-Divider" class="headerlink" title="Delete Divider"></a>Delete Divider</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">~~Delete Divider~~</span><br></pre></td></tr></table></figure>
 <p><del>Delete Divider</del></p>
 <h3 id="Task-List"><a href="#Task-List" class="headerlink" title="Task List"></a>Task List</h3><p><strong>Need a charter in the bracket, Hexo not support this syntax</strong></p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> [x] Todo List 1</span><br><span class="line"><span class="bullet">-</span> [x] Todo List 2</span><br><span class="line"><span class="bullet">-</span> [ ] Todo List 3</span><br></pre></td></tr></table></figure>
-<h3 id="Emoji"><a href="#Emoji" class="headerlink" title="Emoji"></a><a href="http://blog.smallstars.top/posts/778ad936/">Emoji</a></h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">:tent:</span><br><span class="line">:joy:</span><br></pre></td></tr></table></figure>
+<h3 id="Emoji"><a href="#Emoji" class="headerlink" title="Emoji"></a><a href="http://www.smallstars.top/myblog/posts/778ad936/">Emoji</a></h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">:tent:</span><br><span class="line">:joy:</span><br></pre></td></tr></table></figure>
 <p>:tent:</p>
 <p>:joy:</p>
 <h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
@@ -1223,7 +1223,7 @@ max(next[k])+1, &(1 \lt k \lt j \ and \ p_1...p_k = p_{j-k+1}...p_{j-1})
 <li><p>For ‘&amp;&amp;’, if the former is true, then execute the latter, otherwish only execute the former. For ‘||’, if the former is true, only execute the former, the latter don’t have to execute, otherwish have to execute the latter.</p>
 </li>
 </ol>
-<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><p><a href="http://blog.smallstars.top/posts/de945f16/">The JavaScript ‘new’ keyword</a></p>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><p><a href="http://www.smallstars.top/myblog/posts/de945f16/">The JavaScript ‘new’ keyword</a></p>
 <h2 id="QA-2-Array-Flattening"><a href="#QA-2-Array-Flattening" class="headerlink" title="QA 2: Array Flattening"></a>QA 2: Array Flattening</h2><p><strong>Flat the structure of multiple nested arrays.</strong></p>
 <h3 id="Code-1"><a href="#Code-1" class="headerlink" title="Code"></a>Code</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// ...</span></span><br><span class="line"><span class="comment">// This method only expend one layer.</span></span><br><span class="line"><span class="keyword">const</span> flatten1 = <span class="function">(<span class="params">arr</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> [].concat(...arr);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// join and split</span></span><br><span class="line"><span class="comment">// This method will involve implicit conversion, some values will be affected like undefined, null,etc.</span></span><br><span class="line"><span class="keyword">const</span> flatten2 = <span class="function">(<span class="params">arr</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> arr.join(<span class="string">&quot;,&quot;</span>).split(<span class="string">&quot;,&quot;</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// toString and split</span></span><br><span class="line"><span class="comment">// This method will involve implicit conversion, some values will be affected like undefined, null,etc.</span></span><br><span class="line"><span class="keyword">const</span> flatten3 = <span class="function">(<span class="params">arr</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> arr.toString().split(<span class="string">&quot;,&quot;</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Recursion and reduce</span></span><br><span class="line"><span class="keyword">const</span> flatten4 = <span class="function">(<span class="params">arr</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> arr.reduce(<span class="function">(<span class="params">pre, cur</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// we can filter some unwanted values.</span></span><br><span class="line">    <span class="keyword">if</span> (cur === <span class="literal">undefined</span> || cur === <span class="literal">null</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> pre;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">Array</span>.isArray(cur) ? pre.concat(flatten4(cur)) : pre.concat(cur);</span><br><span class="line">  &#125;, []);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6</span></span><br><span class="line"><span class="keyword">const</span> flatten5 = <span class="function">(<span class="params">arr</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// es6 flat method only expand one layer by default</span></span><br><span class="line">  <span class="comment">// return arr.flat()</span></span><br><span class="line">  <span class="keyword">return</span> arr.flat(<span class="literal">Infinity</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <h2 id="QA-3-Sleep"><a href="#QA-3-Sleep" class="headerlink" title="QA 3: Sleep"></a>QA 3: Sleep</h2><p><strong>Use Promise to encapuslate a Sleep function.</strong></p>
@@ -1473,8 +1473,8 @@ max(next[k])+1, &(1 \lt k \lt j \ and \ p_1...p_k = p_{j-k+1}...p_{j-1})
 <p><a href="https://myelf.club/index.php/archives/283/">超大 TXT 文本读取记录</a></p>
 ]]></content>
       <tags>
-        <tag>MySQL</tag>
         <tag>Python</tag>
+        <tag>MySQL</tag>
       </tags>
   </entry>
   <entry>
@@ -1856,9 +1856,9 @@ s ->> c: data or error</pre>
 ]]></content>
       <tags>
         <tag>Flask</tag>
-        <tag>Flask-SQLalchemy</tag>
-        <tag>MySQL</tag>
         <tag>Python</tag>
+        <tag>MySQL</tag>
+        <tag>Flask-SQLalchemy</tag>
       </tags>
   </entry>
   <entry>
@@ -1923,9 +1923,9 @@ s ->> c: data or error</pre>
 ]]></content>
       <tags>
         <tag>Flask</tag>
-        <tag>MySQL</tag>
-        <tag>Python</tag>
         <tag>Flask-RESTful</tag>
+        <tag>Python</tag>
+        <tag>MySQL</tag>
       </tags>
   </entry>
   <entry>
@@ -1958,10 +1958,10 @@ s ->> c: data or error</pre>
 ]]></content>
       <tags>
         <tag>Flask</tag>
-        <tag>Flask-SQLalchemy</tag>
-        <tag>MySQL</tag>
-        <tag>Python</tag>
         <tag>Flask-RESTful</tag>
+        <tag>Python</tag>
+        <tag>MySQL</tag>
+        <tag>Flask-SQLalchemy</tag>
       </tags>
   </entry>
   <entry>

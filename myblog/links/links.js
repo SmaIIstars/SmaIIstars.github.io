@@ -33,6 +33,7 @@ const renderLink = (data) => {
 };
 
 // 获取 json 文件
-fetch("/links/links_config.json")
+// dev ? /links/links_config.json : /myblog/links/links_config.json
+fetch("/myblog/links/links_config.json")
   .then((response) => response.json())
   .then((res) => renderLink(res));
